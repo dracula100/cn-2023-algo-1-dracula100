@@ -8,6 +8,17 @@ client = {x[0]:remove_bracket(x[1]).split(",") for x in client}
 
 candy_list = [input().split() for x in range(candy)]
 candy_list = {x[0]:int(remove_bracket(x[1])) for x in candy_list}
+# My model of input here is like this:
+"""
+	2 #length of child
+ 	2 # length of candy
+  	### These line below is the list of child
+  	Alice (Chocolate,Guimauve)
+   	Bob (Pecto,Jok)
+    	### These linebelow is the list of Candy
+     	Chocolate (10)
+      	Pecto (30)
+"""
 
 """
 file = open("example_input.txt","r")
